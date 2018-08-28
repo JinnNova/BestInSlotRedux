@@ -51,7 +51,7 @@ function SlashCmdList.EXPORTRAID(msg,editbox)
   window:AddChild(box)
   txt = ""
   addLine("local REPLACEME1 = \"REPLACEME1\"")
-  addLine(("local name = GetMapNameByID(%s)"):format(mapId))
+  addLine(("local name = C_Map.GetMapInfo(%s).name"):format(mapId))
   addLine("self:RegisterRaidInstance(REPLACEME2, REPLACEME1, name)")
   addSpacer(50)
   addSpacer(5, instanceName)
