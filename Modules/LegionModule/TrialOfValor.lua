@@ -3,7 +3,7 @@ local ToV = "ToV"
 function TrialOfValor:OnEnable()
     local L = LibStub("AceLocale-3.0"):GetLocale("BestInSlotRedux")
   
-  local trialOfValorName = GetMapNameByID(1114)
+  local trialOfValorName = C_Map.GetMapInfo(806).name
   self:RegisterExpansion("Legion", EXPANSION_NAME6)
   self:RegisterRaidTier("Legion", 70005, trialOfValorName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70005, ToV, trialOfValorName, {

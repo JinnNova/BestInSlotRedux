@@ -3,7 +3,7 @@ local ToS = "ToS"
 function TombOfSargeras:OnEnable()
   local L = LibStub("AceLocale-3.0"):GetLocale("BestInSlotRedux")
 
-  local tombOfSargerasName = GetMapNameByID(1147)
+  local tombOfSargerasName = C_Map.GetMapInfo(850).name
   self:RegisterExpansion("Legion", EXPANSION_NAME6)
   self:RegisterRaidTier("Legion", 70200, tombOfSargerasName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70200, ToS, tombOfSargerasName,  {
