@@ -3,7 +3,7 @@ local NH = "NH"
 function Nighthold:OnEnable()
   local L = LibStub("AceLocale-3.0"):GetLocale("BestInSlotRedux")
   
-  local nightHoldName = GetMapNameByID(1088)
+  local nightHoldName = C_Map.GetMapInfo(764).name
   self:RegisterExpansion("Legion", EXPANSION_NAME6)
   self:RegisterRaidTier("Legion", 70011, nightHoldName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70011, NH, nightHoldName, {

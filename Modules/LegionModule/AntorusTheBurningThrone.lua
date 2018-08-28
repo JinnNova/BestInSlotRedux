@@ -3,7 +3,7 @@ local AtBT = "AtBT"
 function AntorusTheBurningThrone:OnEnable()
   local L = LibStub("AceLocale-3.0"):GetLocale("BestInSlotRedux")
 
-  local antorusTheBurningThroneName = GetMapNameByID(1188)
+  local antorusTheBurningThroneName = C_Map.GetMapInfo(909).name
   self:RegisterExpansion("Legion", EXPANSION_NAME6)
   self:RegisterRaidTier("Legion", 70300, antorusTheBurningThroneName, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY6)
   self:RegisterRaidInstance(70300, AtBT, antorusTheBurningThroneName,  {
