@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title: Best In Slot Redux [|cffff975bBfA|r]
+## Notes: BfA Raid Module for BestInSlotRedux
+## Author: Jinn @ Bloodfeather-EU, Mato @ Bloodfeather-EU
+## Version: v8.0
+## Dependencies: BestInSlotRedux
+
+Uldir.lua
